@@ -41,5 +41,5 @@ Ejemplo 2:
 
 ## Ejecución por consola
 
-1 - mkdir -p work_dir/artifact_name
-2 - cd work_dir && ls -l
+1. mkdir -p work_dir/artifact_name
+2. cd work_dir && ls -l
