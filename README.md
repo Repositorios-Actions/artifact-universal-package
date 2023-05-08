@@ -12,7 +12,6 @@ Se debe indicar con la etiqueta 'with' algunos parametros.
 
 1. Nombre del directorio principal (Repositorio).
 2. Nombre del artefacto.
-3. Concatenar variable de entorno "github.run_numbe", ejemplo: "proyect15" por defecto está "false", indicar "true" para habilitar.
 
 ## Instrucciones
 
@@ -24,7 +23,7 @@ Ejemplo:
   <img width="671" height="61" alt="action" src="public/img/action.PNG">
 </p>
 
-2. Pega en tu workflow y añade la etiqueta with: añadiendo los parametros: user_repo:, pass_repo: y  url_repo:.
+2. Pega en tu workflow y añade la etiqueta with: añadiendo los parametros: "work_dir" y "artifact_name".
 
 Ejemplo:
 
@@ -40,6 +39,7 @@ Ejemplo 2:
   <img width="654" height="150" alt="action_with_variables" src="public/img/action_with_variables.PNG">
 </p>
 
-## Limitaciones
+## Ejecución por consola
 
-De momento solo se realizaron pruebas con repositorios GitLab. No se descarta su compatibiliad con otras compañias.
+1- mkdir -p work_dir/artifact_name
+2- cd work_dir && ls -l
